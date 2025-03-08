@@ -1,10 +1,10 @@
 # Site settings
-title: YOUNG Blog
-SEOTitle: 杨的博客 | YOUNG Blog
+title: YOUNG
+SEOTitle: 杨 | YOUNG
 header-img: img/post-bg-desk.jpg
 email: email.yang@163.com
 description: "Every failure is leading towards success."
-keyword: "YOUNG, YOUNG Blog, 杨的博客, 杨, C++, atto, ai"
+keyword: "YOUNG, 杨, C++, atto, ai"
 url: "http://attoai.github.io"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
 github_repo: "https://github.com/qiubaiying/qiubaiying.github.io.git" # you code repository
