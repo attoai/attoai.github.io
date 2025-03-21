@@ -99,16 +99,16 @@ service-worker: true
 # Friends
 friends: [
     {
-        title: "WY",
-        href: "http://zhengwuyang.com"
+        title: "ISoft",
+        href: "https://isoft.top/"
     },{
-        title: "简书·BY",
-        href: "http://www.jianshu.com/u/e71990ada2fd"
+        title: "信奥赛",
+        href: "https://www.noi.cn/"
     },{
-        title: "Apple",
-        href: "https://apple.com"
+        title: "GESP",
+        href: "https://gesp.ccf.org.cn/"
     },{
-        title: "Apple Developer",
-        href: "https://developer.apple.com/"
+        title: "CSDN",
+        href: "https://www.csdn.net/"
     }
 ]
