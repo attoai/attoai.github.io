@@ -1,18 +1,80 @@
 <!DOCTYPE html>
-<html>
-<head lang="en">
+<html lang="en">
+<head>
     <meta charset="UTF-8">
-    <title>旋转风车</title>
-    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>现代简洁主页</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- 引入 Font Awesome 图标库 -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-<div class="mr-cont">
-<!--   风车-->
-    <img src="img/pic1.png" alt="" class="go">
-    <img src="img/bar.png" alt="" class="bar">
-<!--    提示文字-->
-    <p class="line1">信息学奥赛测试</p>
-    <p class="line2">copyRight</p>
-</div>
+    <!-- 大图背景 -->
+    <header>
+        <div class="header-container">
+            <!-- Logo 部分 -->
+            <div class="logo">
+                <img src="img/logo.png" alt="Logo"> <!-- 替换为你的Logo路径 -->
+            </div>
+
+            <!-- 导航菜单 -->
+            <nav>
+                <ul>
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#">关于我们</a></li>
+                    <li><a href="#">赛事信息</a></li>
+                    <li><a href="#">联系</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="overlay">
+            <div class="content">
+                <h1>欢迎来到我们的主页</h1>
+                <p>简洁、优雅、现代的设计。</p>
+                <a href="#about" class="btn">了解更多</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 关于我们 -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>关于我们</h2>
+            <p>我们致力于为客户提供最优质的产品和服务，探索我们的项目，了解我们的理念。</p>
+        </div>
+    </section>
+
+    <!-- 服务 -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>我们的服务</h2>
+            <div class="service-cards">
+                <div class="card">
+                    <h3>服务 1</h3>
+                    <p>描述服务 1 的优势与特点。</p>
+                </div>
+                <div class="card">
+                    <h3>服务 2</h3>
+                    <p>描述服务 2 的优势与特点。</p>
+                </div>
+                <div class="card">
+                    <h3>服务 3</h3>
+                    <p>描述服务 3 的优势与特点。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 底部 -->
+    <footer>
+        <p>&copy; 2025 现代简洁主页 - 版权所有</p>
+        <p>联系方式: info@example.com</p>
+        <!-- 添加 GitHub 图标链接 -->
+        <div class="social-links">
+            <a href="https://github.com/your-username" target="_blank">
+                <i class="fab fa-github"></i> <!-- GitHub 图标 -->
+            </a>
+        </div>
+    </footer>
 </body>
 </html>
