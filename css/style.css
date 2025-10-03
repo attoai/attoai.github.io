@@ -154,31 +154,7 @@ header {
 /* 年份选择模块 */
 .year-selection {
     background-color: #ffffff;
-    padding: 30px 0;
-    text-align: center;
-    height: auto; /* 确保高度自适应 */
-}
-
-/* 年份选择行 */
-.year-selection .row {
-    display: flex;
-    align-items: center;  /* 确保内容垂直居中 */
-    justify-content: center;  /* 水平居中对齐 */
-    gap: 10px;  /* 文字和下拉框之间的间隔 */
-}
-
-/* 年份选择文字样式 */
-.year-selection .row h3 {
-    font-size: 1.5em;         /* 文字大小 */
-    margin: 0;                /* 去掉默认的外边距 */
-    color: #333;              /* 文字颜色 */
-    font-weight: 600;         /* 字体加粗 */
-}
-
-/* 年份选择模块 */
-.year-selection {
-    background-color: #ffffff;
-    padding: 30px 0;
+    padding: 20px 0;
     text-align: center;
     height: auto;
 }
