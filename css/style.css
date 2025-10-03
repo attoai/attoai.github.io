@@ -263,7 +263,7 @@ header {
 
 /* 按钮样式 */
 .card button {
-    padding: 15px 40px;
+    padding: 20px 40px;
     font-size: 1.1em;
     font-weight: bold;
     color: white;
@@ -419,3 +419,4 @@ footer .footer-logo img {
         font-size: 1.2em;
     }
 }
+
