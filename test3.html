@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <title>RTValue 实时监控</title>
+  <script src="https://unpkg.com/mqtt/dist/mqtt.min.js"></script>
+</head>
+<body>
+  <h1>设备实时值</h1>
+  <pre id="output">等待数据...</pre>
+
+  <script>
+    const deviceId = "25ee4ac3-d92d-404d-a886-8e863bc22f43"; // 替换成你的设备ID
+    //const deviceId ="3f73a607-6633-480b-85a4-63f43c3b3620";
+    const timestamp = Date.now();
+    const clientId = `web_${deviceId}_${timestamp}`;
+
+    const client = mqtt.connect("ws://bj-2-mqtt.iot-api.com:8083/mqtt", {
+      username: "56js4583jer0a9ak",
+      password: "zrhHF4Lb9j",
+      clientId: clientId
+    });
+
+    client.on("connect", () => {
+      console.log("✅ 连接成功，clientId:", clientId);
+      client.subscribe(`device/${deviceId}/rtvalue`, (err) => {
+        if (err) console.error("订阅失败:", err);
+      });
+    });
+
+    client.on("message", (topic, message) => {
+      const now = new Date().toLocaleString();
+      document.getElementById("output").textContent = `[${now}] ${topic} : ${message.toString()}`;
+    });
+
+    client.on("error", (err) => {
+      console.error("连接错误:", err);
+    });
+  </script>
+</body>
+</html>
